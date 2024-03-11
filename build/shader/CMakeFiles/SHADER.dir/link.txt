@@ -1,0 +1,2 @@
+E:\Mingw\mingw64\bin\ar.exe qc libSHADER.a CMakeFiles/SHADER.dir/blinnphoneshader.cpp.obj CMakeFiles/SHADER.dir/shadowShader.cpp.obj
+E:\Mingw\mingw64\bin\ranlib.exe libSHADER.a

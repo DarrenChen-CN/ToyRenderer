@@ -1,0 +1,12 @@
+E:/code/VSCode Projects/C++/ToyRenderer/build/CMakeFiles/ToyRenderer.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/CMakeFiles/edit_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/CMakeFiles/rebuild_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/UI/CMakeFiles/UI.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/UI/CMakeFiles/edit_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/UI/CMakeFiles/rebuild_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/core/CMakeFiles/Core.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/core/CMakeFiles/edit_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/core/CMakeFiles/rebuild_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/shader/CMakeFiles/SHADER.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/shader/CMakeFiles/edit_cache.dir
+E:/code/VSCode Projects/C++/ToyRenderer/build/shader/CMakeFiles/rebuild_cache.dir

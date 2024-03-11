@@ -1,0 +1,67 @@
+[
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/ToyRenderer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ToyRenderer.dir\\main.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\main.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/main.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/UI",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/UI.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\UI.dir\\ui.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\UI\\ui.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/UI/ui.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\camera.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\camera.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/camera.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\light.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\light.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/light.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\model.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\model.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/model.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\rasterizer.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\rasterizer.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/rasterizer.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\renderbuffer.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\renderbuffer.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/renderbuffer.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\sceen.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\sceen.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/sceen.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\shadowmap.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\shadowmap.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/shadowmap.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\texture.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\texture.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/texture.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\triangle.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\triangle.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/triangle.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/shader",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/SHADER.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SHADER.dir\\blinnphoneshader.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\shader\\blinnphoneshader.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/shader/blinnphoneshader.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/shader",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/SHADER.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SHADER.dir\\shadowShader.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\shader\\shadowShader.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/shader/shadowShader.cpp"
+}
+]

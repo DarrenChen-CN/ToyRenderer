@@ -1,0 +1,14 @@
+# 查找当前目录下的所有源文件
+# 并将名称保存到 DIR_LIB_SRCS 变量
+aux_source_directory(. DIR_LIB_SRCS)
+
+# SDL_Image所在路径
+set(SDL2_IMAGE_DIR E:/repo/SDL2_image-2.8.2/x86_64-w64-mingw32)
+
+include_directories(../utils)
+include_directories(../shader)
+include_directories(${SDL2_IMAGE_DIR}/include/SDL2)
+
+# 生成链接库
+add_library (Core ${DIR_LIB_SRCS})
+

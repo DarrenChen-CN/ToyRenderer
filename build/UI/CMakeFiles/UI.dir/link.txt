@@ -1,0 +1,2 @@
+E:\Mingw\mingw64\bin\ar.exe qc libUI.a CMakeFiles/UI.dir/ui.cpp.obj
+E:\Mingw\mingw64\bin\ranlib.exe libUI.a

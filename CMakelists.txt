@@ -1,0 +1,44 @@
+cmake_minimum_required(VERSION 3.5)
+
+# C++版本
+set(CMAKE_CXX_STANDARD 17)
+
+project(ToyRenderer)
+
+# SDL2所在路径
+set(SDL2_DIR E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32)
+# Eigen所在路径
+set(EIGEN_DIR E:/Mingw/mingw64/include/eigen3)
+# SDL_Image所在路径
+set(SDL2_IMAGE_DIR E:/repo/SDL2_image-2.8.2/x86_64-w64-mingw32)
+# opencv所在路径
+set(OPENCV_DIR E:/repo/opencv/opencv/build)
+
+# include目录
+include_directories(${SDL2_DIR}/include/SDL2)
+include_directories(${SDL2_IMAGE_DIR}/include/SDL2)
+include_directories(${EIGEN_DIR})
+include_directories(${OPENCV_DIR}/include/opencv2)
+
+include_directories(./UI)
+include_directories(./core)
+include_directories(./utils)
+include_directories(./shader)
+
+# 库目录
+link_directories(${SDL2_DIR}/lib)
+link_directories(${SDL2_IMAGE_DIR}/lib)
+link_directories(${OPENCV_DIR}/lib)
+
+# 库
+link_libraries(mingw32 SDL2main SDL2 SDL2_image)
+
+# 子目录
+add_subdirectory(UI)
+add_subdirectory(core)
+add_subdirectory(shader)
+
+aux_source_directory(. DIR_SRCS)
+add_executable(ToyRenderer ${DIR_SRCS})
+
+target_link_libraries(ToyRenderer UI Core SHADER)
