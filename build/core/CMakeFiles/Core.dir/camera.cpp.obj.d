@@ -385,4 +385,5 @@ core/CMakeFiles/Core.dir/camera.cpp.obj: \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/interval.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/utils/define.h

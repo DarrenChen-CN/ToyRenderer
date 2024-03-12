@@ -15,6 +15,5 @@ public:
     Mat4 perspectiveMatrix;
     
     Camera(Vec3 &position, Vec3 &center, Vec3 &up, float near, float far, float aspect, float fovY);
-    Camera(Camera& otherCamera);
     Camera();
 };

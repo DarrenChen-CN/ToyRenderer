@@ -2,13 +2,15 @@
 #include<Eigen/Dense>
 #include<iostream>
 #include<math.h>
+#include"interval.h"
+#include "define.h"
 #define PI 3.1415926 
 
 enum class AXIS{
     AXIS_X, AXIS_Y, AXIS_Z
 };
 
-static Eigen::Vector4f V3ftoV4f(Eigen::Vector3f v, float t){
+static Vec4 V3ftoV4f(Eigen::Vector3f v, float t){
     Eigen::Vector4f res;
     res(0) = v(0);
     res(1) = v(1);
@@ -36,7 +38,7 @@ static std::tuple<float, float, float> computeBarycentric(const Eigen::Vector4f*
 }
 
 // 平移
-static Eigen::Matrix4f translate(float x, float y, float z){
+static Mat4 translate(float x, float y, float z){
     Eigen::Matrix4f matrix = Eigen::Matrix4f::Identity();
     matrix(0, 3) = x;
     matrix(1, 3) = y; 
@@ -45,7 +47,7 @@ static Eigen::Matrix4f translate(float x, float y, float z){
 }
 
 // 缩放
-static Eigen::Matrix4f scale(float x, float y, float z){
+static Mat4 scale(float x, float y, float z){
     Eigen::Matrix4f matrix = Eigen::Matrix4f::Identity();
     matrix(0, 0) = x;
     matrix(1, 1) = y;
@@ -54,7 +56,7 @@ static Eigen::Matrix4f scale(float x, float y, float z){
 }
 
 // 旋转
-static Eigen::Matrix4f rotate(float theta, AXIS axis){
+static Mat4 rotate(float theta, AXIS axis){
     theta = theta * PI / 180.0f; // 转为弧度制
     float cosTheta = cos(theta), sinTheta = sin(theta);
     Eigen::Matrix4f matrix = Eigen::Matrix4f::Identity();
@@ -78,7 +80,7 @@ static Eigen::Matrix4f rotate(float theta, AXIS axis){
 }
 
 // 视图变换矩阵
-static Eigen::Matrix4f lookat(Eigen::Vector3f position, Eigen::Vector3f center, Eigen::Vector3f up){
+static Mat4 lookat(Eigen::Vector3f position, Eigen::Vector3f center, Eigen::Vector3f up){
     Eigen::Vector3f z = (position - center).normalized();
     Eigen::Vector3f x = (up.cross(z)).normalized();
     Eigen::Vector3f y = (z.cross(x)).normalized();
@@ -94,7 +96,7 @@ static Eigen::Matrix4f lookat(Eigen::Vector3f position, Eigen::Vector3f center, 
 // 正交投影
 // 相机看向z轴负方向 
 // 认为left = -right bottom = -top
-static Eigen::Matrix4f orthographic(float near, float far, float right, float top){
+static Mat4 orthographic(float near, float far, float right, float top){
     float bottom = -top;
     float left = -right;
     Eigen::Matrix4f ortho = Eigen::Matrix4f::Identity();
@@ -111,7 +113,7 @@ static Eigen::Matrix4f orthographic(float near, float far, float right, float to
 }
 
 // 透视投影
-static Eigen::Matrix4f perspective(float near, float far, float aspect, float fovY){
+static Mat4 perspective(float near, float far, float aspect, float fovY){
     fovY = fovY * PI / 180.0f; // 转为弧度制
     float top = fabsf(near * tan(fovY / 2));
     float bottom = -top;
@@ -138,7 +140,7 @@ static Eigen::Matrix4f perspective(float near, float far, float aspect, float fo
 
 
 // 视口变换矩阵
-static Eigen::Matrix4f viewport(float width, float height, float near, float far){
+static Mat4 viewport(float width, float height, float near, float far){
     Eigen::Matrix4f viewportMatrix = Eigen::Matrix4f::Identity();
     viewportMatrix(0, 0) = width / 2;
     viewportMatrix(0, 3) = width / 2;
@@ -147,4 +149,23 @@ static Eigen::Matrix4f viewport(float width, float height, float near, float far
     viewportMatrix(2, 2) = (near - far) / 2;
     viewportMatrix(2, 3) = (near + far) / 2;
     return viewportMatrix;
+}
+
+// 伽马校正
+inline double linearToGamma(double linearComponent){
+    return sqrt(linearComponent);
+}
+
+// 将[0 - 1]的颜色映射到[0-255]
+static Color getColor(Color& c){
+    auto r = c(0);
+    auto g = c(1);
+    auto b = c(2);
+
+    r = linearToGamma(r);
+    g = linearToGamma(g);
+    b = linearToGamma(b);
+
+    static const Interval intensity(0.000, 0.999);
+    return Color(static_cast<int>(256 * intensity.clamp(r)), static_cast<int>(256 * intensity.clamp(g)), static_cast<int>(256 * intensity.clamp(b)));
 }

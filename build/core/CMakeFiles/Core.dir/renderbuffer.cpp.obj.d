@@ -1,6 +1,7 @@
 core/CMakeFiles/Core.dir/renderbuffer.cpp.obj: \
  E:\code\VSCode\ Projects\C++\ToyRenderer\core\renderbuffer.cpp \
  E:\code\VSCode\ Projects\C++\ToyRenderer\core\renderbuffer.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/define.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/Dense \
  E:/Mingw/mingw64/include/eigen3/Eigen/Core \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -382,4 +383,7 @@ core/CMakeFiles/Core.dir/renderbuffer.cpp.obj: \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/mathutil.h \
+ E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+ E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/interval.h

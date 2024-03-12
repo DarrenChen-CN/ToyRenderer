@@ -1,9 +1,10 @@
 #pragma once 
-#include <Eigen/Dense>
+#include"define.h"
+#include"mathutil.h"
 class RenderBuffer{
 private:
     int width, height;
-    unsigned char* frameBuffer;
+    float* frameBuffer;
     float* depthBuffer;
 
 public:
@@ -13,9 +14,9 @@ public:
     void clearFrameBuffer();
     void clearDepthBuffer();
 
-    unsigned char* getFrameBuffer();
+    float* getFrameBuffer();
     float* getDepthBuffer();
-    void setFrameBuffer(unsigned char* frameBuffer);
+    void setFrameBuffer(float* frameBuffer);
     void setDepthBuffer(float* depthBuffer);
-    void setPixel(int x, int y, float z, Eigen::Vector3f color);
+    void setPixel(int x, int y, float z, Vec3 &color);
 };

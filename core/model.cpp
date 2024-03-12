@@ -2,12 +2,13 @@
 #include<Eigen\Dense>
 #include<fstream>
 #include<iostream>
+#include"imagetexture.h"
 Model::Model(const char* filename, const char* textureFilename){
-    // triangleList = std::make_shared<std::vector<Triangle>>();
-    std::vector<Eigen::Vector4f> verts_;
+    triangleList = std::make_shared<std::vector<Triangle>>();
+    std::vector<Vec4> verts_;
     std::vector<std::vector<Eigen::Vector3i>> faces_;
-    std::vector<Eigen::Vector3f> norms_;
-    std::vector<Eigen::Vector2f> uv_;
+    std::vector<Vec3> norms_;
+    std::vector<Vec2> uv_;
 
     std::ifstream in;
     in.open (filename, std::ifstream::in);
@@ -54,8 +55,8 @@ Model::Model(const char* filename, const char* textureFilename){
         }
     }
 
-    triangleList.resize(faces_.size());
-    triangleList.clear();
+    triangleList -> resize(faces_.size());
+    triangleList -> clear();
     
     for(int i = 0; i < faces_.size(); i ++){
         Triangle tmp;
@@ -77,19 +78,22 @@ Model::Model(const char* filename, const char* textureFilename){
         tmp.normals[2] = norms_[face_vertex_3(2)];
 
 
-        triangleList.push_back(tmp);
+        triangleList -> push_back(tmp);
     }
     vertexNum = static_cast<int>(verts_.size());
     faceNum = static_cast<int>(faces_.size());
     modelMatrix = Mat4::Identity();
 
+    // std::cout << "here" << std::endl;
+
     // 加载纹理（如果有）
     if(textureFilename != NULL){
-        texture = new Texture(textureFilename);
-    }
+        texture = std::make_shared<ImageTexture>(textureFilename);
+        // std::cout << "here" << std::endl;
+    }else texture = std::make_shared<Texture>();
 }
 
 Model::~Model(){}
-void Model::setShader(Shader* shader){
+void Model::setShader(std::shared_ptr<Shader> shader){
     this -> shader = shader;
 };

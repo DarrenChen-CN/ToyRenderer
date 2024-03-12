@@ -83,11 +83,26 @@ core/CMakeFiles/Core.dir/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/camera.cpp.s"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\code\VSCode Projects\C++\ToyRenderer\core\camera.cpp" -o CMakeFiles\Core.dir\camera.cpp.s
 
+core/CMakeFiles/Core.dir/imagetexture.cpp.obj: core/CMakeFiles/Core.dir/flags.make
+core/CMakeFiles/Core.dir/imagetexture.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
+core/CMakeFiles/Core.dir/imagetexture.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/imagetexture.cpp
+core/CMakeFiles/Core.dir/imagetexture.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/Core.dir/imagetexture.cpp.obj"
+	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/imagetexture.cpp.obj -MF CMakeFiles\Core.dir\imagetexture.cpp.obj.d -o CMakeFiles\Core.dir\imagetexture.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\imagetexture.cpp"
+
+core/CMakeFiles/Core.dir/imagetexture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Core.dir/imagetexture.cpp.i"
+	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\code\VSCode Projects\C++\ToyRenderer\core\imagetexture.cpp" > CMakeFiles\Core.dir\imagetexture.cpp.i
+
+core/CMakeFiles/Core.dir/imagetexture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/imagetexture.cpp.s"
+	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\code\VSCode Projects\C++\ToyRenderer\core\imagetexture.cpp" -o CMakeFiles\Core.dir\imagetexture.cpp.s
+
 core/CMakeFiles/Core.dir/light.cpp.obj: core/CMakeFiles/Core.dir/flags.make
 core/CMakeFiles/Core.dir/light.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
 core/CMakeFiles/Core.dir/light.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/light.cpp
 core/CMakeFiles/Core.dir/light.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/Core.dir/light.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/Core.dir/light.cpp.obj"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/light.cpp.obj -MF CMakeFiles\Core.dir\light.cpp.obj.d -o CMakeFiles\Core.dir\light.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\light.cpp"
 
 core/CMakeFiles/Core.dir/light.cpp.i: cmake_force
@@ -102,7 +117,7 @@ core/CMakeFiles/Core.dir/model.cpp.obj: core/CMakeFiles/Core.dir/flags.make
 core/CMakeFiles/Core.dir/model.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
 core/CMakeFiles/Core.dir/model.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/model.cpp
 core/CMakeFiles/Core.dir/model.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/Core.dir/model.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/CMakeFiles/Core.dir/model.cpp.obj"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/model.cpp.obj -MF CMakeFiles\Core.dir\model.cpp.obj.d -o CMakeFiles\Core.dir\model.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\model.cpp"
 
 core/CMakeFiles/Core.dir/model.cpp.i: cmake_force
@@ -117,7 +132,7 @@ core/CMakeFiles/Core.dir/rasterizer.cpp.obj: core/CMakeFiles/Core.dir/flags.make
 core/CMakeFiles/Core.dir/rasterizer.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
 core/CMakeFiles/Core.dir/rasterizer.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/rasterizer.cpp
 core/CMakeFiles/Core.dir/rasterizer.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/CMakeFiles/Core.dir/rasterizer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/CMakeFiles/Core.dir/rasterizer.cpp.obj"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/rasterizer.cpp.obj -MF CMakeFiles\Core.dir\rasterizer.cpp.obj.d -o CMakeFiles\Core.dir\rasterizer.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\rasterizer.cpp"
 
 core/CMakeFiles/Core.dir/rasterizer.cpp.i: cmake_force
@@ -132,7 +147,7 @@ core/CMakeFiles/Core.dir/renderbuffer.cpp.obj: core/CMakeFiles/Core.dir/flags.ma
 core/CMakeFiles/Core.dir/renderbuffer.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
 core/CMakeFiles/Core.dir/renderbuffer.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/renderbuffer.cpp
 core/CMakeFiles/Core.dir/renderbuffer.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/CMakeFiles/Core.dir/renderbuffer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core/CMakeFiles/Core.dir/renderbuffer.cpp.obj"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/renderbuffer.cpp.obj -MF CMakeFiles\Core.dir\renderbuffer.cpp.obj.d -o CMakeFiles\Core.dir\renderbuffer.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\renderbuffer.cpp"
 
 core/CMakeFiles/Core.dir/renderbuffer.cpp.i: cmake_force
@@ -147,7 +162,7 @@ core/CMakeFiles/Core.dir/sceen.cpp.obj: core/CMakeFiles/Core.dir/flags.make
 core/CMakeFiles/Core.dir/sceen.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
 core/CMakeFiles/Core.dir/sceen.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/sceen.cpp
 core/CMakeFiles/Core.dir/sceen.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core/CMakeFiles/Core.dir/sceen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/CMakeFiles/Core.dir/sceen.cpp.obj"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/sceen.cpp.obj -MF CMakeFiles\Core.dir\sceen.cpp.obj.d -o CMakeFiles\Core.dir\sceen.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\sceen.cpp"
 
 core/CMakeFiles/Core.dir/sceen.cpp.i: cmake_force
@@ -162,7 +177,7 @@ core/CMakeFiles/Core.dir/shadowmap.cpp.obj: core/CMakeFiles/Core.dir/flags.make
 core/CMakeFiles/Core.dir/shadowmap.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
 core/CMakeFiles/Core.dir/shadowmap.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/shadowmap.cpp
 core/CMakeFiles/Core.dir/shadowmap.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/CMakeFiles/Core.dir/shadowmap.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object core/CMakeFiles/Core.dir/shadowmap.cpp.obj"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/shadowmap.cpp.obj -MF CMakeFiles\Core.dir\shadowmap.cpp.obj.d -o CMakeFiles\Core.dir\shadowmap.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\shadowmap.cpp"
 
 core/CMakeFiles/Core.dir/shadowmap.cpp.i: cmake_force
@@ -172,21 +187,6 @@ core/CMakeFiles/Core.dir/shadowmap.cpp.i: cmake_force
 core/CMakeFiles/Core.dir/shadowmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/shadowmap.cpp.s"
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\code\VSCode Projects\C++\ToyRenderer\core\shadowmap.cpp" -o CMakeFiles\Core.dir\shadowmap.cpp.s
-
-core/CMakeFiles/Core.dir/texture.cpp.obj: core/CMakeFiles/Core.dir/flags.make
-core/CMakeFiles/Core.dir/texture.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
-core/CMakeFiles/Core.dir/texture.cpp.obj: E:/code/VSCode\ Projects/C++/ToyRenderer/core/texture.cpp
-core/CMakeFiles/Core.dir/texture.cpp.obj: core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\code\VSCode Projects\C++\ToyRenderer\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object core/CMakeFiles/Core.dir/texture.cpp.obj"
-	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/Core.dir/texture.cpp.obj -MF CMakeFiles\Core.dir\texture.cpp.obj.d -o CMakeFiles\Core.dir\texture.cpp.obj -c "E:\code\VSCode Projects\C++\ToyRenderer\core\texture.cpp"
-
-core/CMakeFiles/Core.dir/texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Core.dir/texture.cpp.i"
-	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\code\VSCode Projects\C++\ToyRenderer\core\texture.cpp" > CMakeFiles\Core.dir\texture.cpp.i
-
-core/CMakeFiles/Core.dir/texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/texture.cpp.s"
-	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build\core" && E:\Mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\code\VSCode Projects\C++\ToyRenderer\core\texture.cpp" -o CMakeFiles\Core.dir\texture.cpp.s
 
 core/CMakeFiles/Core.dir/triangle.cpp.obj: core/CMakeFiles/Core.dir/flags.make
 core/CMakeFiles/Core.dir/triangle.cpp.obj: core/CMakeFiles/Core.dir/includes_CXX.rsp
@@ -206,26 +206,26 @@ core/CMakeFiles/Core.dir/triangle.cpp.s: cmake_force
 # Object files for target Core
 Core_OBJECTS = \
 "CMakeFiles/Core.dir/camera.cpp.obj" \
+"CMakeFiles/Core.dir/imagetexture.cpp.obj" \
 "CMakeFiles/Core.dir/light.cpp.obj" \
 "CMakeFiles/Core.dir/model.cpp.obj" \
 "CMakeFiles/Core.dir/rasterizer.cpp.obj" \
 "CMakeFiles/Core.dir/renderbuffer.cpp.obj" \
 "CMakeFiles/Core.dir/sceen.cpp.obj" \
 "CMakeFiles/Core.dir/shadowmap.cpp.obj" \
-"CMakeFiles/Core.dir/texture.cpp.obj" \
 "CMakeFiles/Core.dir/triangle.cpp.obj"
 
 # External object files for target Core
 Core_EXTERNAL_OBJECTS =
 
 core/libCore.a: core/CMakeFiles/Core.dir/camera.cpp.obj
+core/libCore.a: core/CMakeFiles/Core.dir/imagetexture.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/light.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/model.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/rasterizer.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/renderbuffer.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/sceen.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/shadowmap.cpp.obj
-core/libCore.a: core/CMakeFiles/Core.dir/texture.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/triangle.cpp.obj
 core/libCore.a: core/CMakeFiles/Core.dir/build.make
 core/libCore.a: core/CMakeFiles/Core.dir/link.txt

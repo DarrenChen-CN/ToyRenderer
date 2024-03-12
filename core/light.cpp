@@ -2,6 +2,6 @@
 
 Light::Light(){}
 
-Light::Light(Vec3& lightPos, Vec3& lightColor){
+Light::Light(Vec3& lightPos){
     this -> lightPos = lightPos;
 }

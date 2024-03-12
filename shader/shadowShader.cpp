@@ -9,6 +9,7 @@ Eigen::Vector4f ShadowShader::vertexShader(VertexData &vertexData)
 
 Eigen::Vector3f ShadowShader::fragmentShader(FragmentData &fragmentData)
 {
-    float z = fragmentData.postion(2) / 2 + .5f;
-    return Eigen::Vector3f(255, 255, 255) * z;
+    // float z = fragmentData.postion(2) / 2 + .5f;
+    float z = fragmentData.postion(2);
+    return Color(z, z, z);
 }

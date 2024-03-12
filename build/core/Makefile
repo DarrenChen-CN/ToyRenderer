@@ -153,6 +153,30 @@ camera.cpp.s:
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+imagetexture.obj: imagetexture.cpp.obj
+.PHONY : imagetexture.obj
+
+# target to build an object file
+imagetexture.cpp.obj:
+	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/imagetexture.cpp.obj
+.PHONY : imagetexture.cpp.obj
+
+imagetexture.i: imagetexture.cpp.i
+.PHONY : imagetexture.i
+
+# target to preprocess a source file
+imagetexture.cpp.i:
+	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/imagetexture.cpp.i
+.PHONY : imagetexture.cpp.i
+
+imagetexture.s: imagetexture.cpp.s
+.PHONY : imagetexture.s
+
+# target to generate assembly for a file
+imagetexture.cpp.s:
+	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/imagetexture.cpp.s
+.PHONY : imagetexture.cpp.s
+
 light.obj: light.cpp.obj
 .PHONY : light.obj
 
@@ -297,30 +321,6 @@ shadowmap.cpp.s:
 	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/shadowmap.cpp.s
 .PHONY : shadowmap.cpp.s
 
-texture.obj: texture.cpp.obj
-.PHONY : texture.obj
-
-# target to build an object file
-texture.cpp.obj:
-	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/texture.cpp.obj
-.PHONY : texture.cpp.obj
-
-texture.i: texture.cpp.i
-.PHONY : texture.i
-
-# target to preprocess a source file
-texture.cpp.i:
-	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/texture.cpp.i
-.PHONY : texture.cpp.i
-
-texture.s: texture.cpp.s
-.PHONY : texture.s
-
-# target to generate assembly for a file
-texture.cpp.s:
-	cd /d "E:\code\VSCode Projects\C++\ToyRenderer\build" && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\Core.dir\build.make core/CMakeFiles/Core.dir/texture.cpp.s
-.PHONY : texture.cpp.s
-
 triangle.obj: triangle.cpp.obj
 .PHONY : triangle.obj
 
@@ -357,6 +357,9 @@ help:
 	@echo ... camera.obj
 	@echo ... camera.i
 	@echo ... camera.s
+	@echo ... imagetexture.obj
+	@echo ... imagetexture.i
+	@echo ... imagetexture.s
 	@echo ... light.obj
 	@echo ... light.i
 	@echo ... light.s
@@ -375,9 +378,6 @@ help:
 	@echo ... shadowmap.obj
 	@echo ... shadowmap.i
 	@echo ... shadowmap.s
-	@echo ... texture.obj
-	@echo ... texture.i
-	@echo ... texture.s
 	@echo ... triangle.obj
 	@echo ... triangle.i
 	@echo ... triangle.s

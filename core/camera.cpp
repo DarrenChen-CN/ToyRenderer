@@ -11,17 +11,5 @@ Camera::Camera(Vec3 &position, Vec3 &center, Vec3 &up, float near, float far, fl
     perspectiveMatrix = perspective(near, far, aspect, fovY);
 }
 
-Camera::Camera(Camera& otherCamera){
-    position = otherCamera.position;
-    center = otherCamera.center;
-    up = otherCamera.up;
-    near = otherCamera.near;
-    far = otherCamera.far;
-    aspect = otherCamera.aspect;
-    fovY = otherCamera.fovY;
-    viewMatrix = lookat(position, center, up);
-    orthographicMatrix = orthographic(near, far, RIGHT, TOP);
-    perspectiveMatrix = perspective(near, far, aspect, fovY);
-}
 
 Camera::Camera(){}

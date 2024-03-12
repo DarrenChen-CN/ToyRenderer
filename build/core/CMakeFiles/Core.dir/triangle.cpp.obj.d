@@ -1,6 +1,7 @@
 core/CMakeFiles/Core.dir/triangle.cpp.obj: \
  E:\code\VSCode\ Projects\C++\ToyRenderer\core\triangle.cpp \
  E:\code\VSCode\ Projects\C++\ToyRenderer\core\triangle.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/define.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/Dense \
  E:/Mingw/mingw64/include/eigen3/Eigen/Core \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \

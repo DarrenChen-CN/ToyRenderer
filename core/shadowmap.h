@@ -2,9 +2,7 @@
 class ShadowMap{
 public:
     int width, height;
-    unsigned char* shadowmap;
-    float* depthBuffer;
+    float* shadowmap;
 
     ShadowMap(int width, int height);
-    float queryDepth(int x, int y);
 };

@@ -160,6 +160,7 @@ CMakeFiles/ToyRenderer.dir/main.cpp.obj: \
  E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/SDL_locale.h \
  E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/SDL_misc.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/renderbuffer.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/define.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/Dense \
  E:/Mingw/mingw64/include/eigen3/Eigen/Core \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -508,18 +509,17 @@ CMakeFiles/ToyRenderer.dir/main.cpp.obj: \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  E:/Mingw/mingw64/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/mathutil.h \
+ E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+ E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+ E:/code/VSCode\ Projects/C++/ToyRenderer/utils/interval.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/rasterizer.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/triangle.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/sceen.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/model.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/texture.h \
- E:/repo/SDL2_image-2.8.2/x86_64-w64-mingw32/include/SDL2/SDL_image.h \
- E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
- E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/begin_code.h \
- E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/close_code.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/shader/shader.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/light.h \
- E:/code/VSCode\ Projects/C++/ToyRenderer/utils/define.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/shadowmap.h \
  E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
  E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -531,8 +531,9 @@ CMakeFiles/ToyRenderer.dir/main.cpp.obj: \
  E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h \
  E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/core/camera.h \
- E:/code/VSCode\ Projects/C++/ToyRenderer/utils/mathutil.h \
- E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
- E:/Mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/shader/shadowShader.h \
+ E:/repo/SDL2_image-2.8.2/x86_64-w64-mingw32/include/SDL2/SDL_image.h \
+ E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
+ E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/begin_code.h \
+ E:/repo/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2/close_code.h \
  E:/code/VSCode\ Projects/C++/ToyRenderer/shader/blinnphoneshader.h

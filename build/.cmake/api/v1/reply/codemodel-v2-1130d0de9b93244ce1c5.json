@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "UI",
+					"jsonFile" : "directory-UI-Debug-2fb30ecde3adcd6f7f99.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "UI",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "core",
+					"jsonFile" : "directory-core-Debug-e3757ce4a321da3133c4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "core",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "shader",
+					"jsonFile" : "directory-shader-Debug-6576b68a85ddb91c63fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "shader",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "ToyRenderer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Core::@57760688d1f824db5d9c",
+					"jsonFile" : "target-Core-Debug-3150b7a4d53ab5c28062.json",
+					"name" : "Core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "SHADER::@2bbbf1053401b8be33b8",
+					"jsonFile" : "target-SHADER-Debug-d784c564f238fea6a672.json",
+					"name" : "SHADER",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ToyRenderer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ToyRenderer-Debug-cbcdab158cc32e5e5b7a.json",
+					"name" : "ToyRenderer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "UI::@e824db2576db0fa939c2",
+					"jsonFile" : "target-UI-Debug-e032c33da92bdcfb8263.json",
+					"name" : "UI",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/code/VSCode Projects/C++/ToyRenderer/build",
+		"source" : "E:/code/VSCode Projects/C++/ToyRenderer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

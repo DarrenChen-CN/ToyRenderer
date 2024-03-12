@@ -1,12 +1,12 @@
 #pragma once
-#include<Eigen/Dense>
+#include"define.h"
 class Triangle{
 public:
-    Eigen::Vector4f points[3]; // 坐标使用齐次坐标
-    Eigen::Vector3f normals[3];
-    Eigen::Vector2f texCoords[3];
-    Eigen::Vector3f colors[3];
-    Eigen::Vector4f screen[3]; // 屏幕坐标
+    Vec4 points[3]; // 坐标使用齐次坐标
+    Vec3 normals[3];
+    Vec2 texCoords[3];
+    Vec3 colors[3];
+    Vec4 screen[3]; // 屏幕坐标
 
     Triangle();
     Triangle(const Triangle& otherTriangle);

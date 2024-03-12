@@ -3,23 +3,20 @@
 
 void Sceen::loadModel(const char* filename, const char* textureFilename){
     Model model(filename, textureFilename);
-    modelList.push_back(model);
+    // std::cout << "here" << std::endl;
+    modelList -> push_back(model);
+    // std::cout << "here" << std::endl;
 }
 
-void Sceen::setLight(Light *light){
+void Sceen::setLight(std::shared_ptr<Light> light){
     this -> light = light;
 }
 
-Sceen::Sceen(Camera camera){
+Sceen::Sceen(std::shared_ptr<Camera> camera){
     this -> camera = camera;
+    modelList = std::make_shared<std::vector<Model>>();
 }
 
-Sceen::Sceen(){}
-
-Sceen::Sceen(Sceen& otherSceen){
-    camera = otherSceen.camera;
-    for(Model model: otherSceen.modelList){
-        modelList.push_back(model);
-    }
-    light = otherSceen.light;
+Sceen::Sceen(){
+    modelList = std::make_shared<std::vector<Model>>();
 }

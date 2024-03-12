@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Core.dir/camera.cpp.obj"
   "CMakeFiles/Core.dir/camera.cpp.obj.d"
+  "CMakeFiles/Core.dir/imagetexture.cpp.obj"
+  "CMakeFiles/Core.dir/imagetexture.cpp.obj.d"
   "CMakeFiles/Core.dir/light.cpp.obj"
   "CMakeFiles/Core.dir/light.cpp.obj.d"
   "CMakeFiles/Core.dir/model.cpp.obj"
@@ -13,8 +15,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Core.dir/sceen.cpp.obj.d"
   "CMakeFiles/Core.dir/shadowmap.cpp.obj"
   "CMakeFiles/Core.dir/shadowmap.cpp.obj.d"
-  "CMakeFiles/Core.dir/texture.cpp.obj"
-  "CMakeFiles/Core.dir/texture.cpp.obj.d"
   "CMakeFiles/Core.dir/triangle.cpp.obj"
   "CMakeFiles/Core.dir/triangle.cpp.obj.d"
   "libCore.a"

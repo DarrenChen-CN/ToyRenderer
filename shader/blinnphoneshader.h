@@ -7,6 +7,6 @@
 #include"shadowShader.h"
 class BlinnPhoneShader: public Shader{
 public:
-    virtual Eigen::Vector4f vertexShader(VertexData& vertexData);
-    virtual Eigen::Vector3f fragmentShader(FragmentData& fragmentData);
+    virtual Vec4 vertexShader(VertexData& vertexData) override;
+    virtual Color fragmentShader(FragmentData& fragmentData) override;
 };

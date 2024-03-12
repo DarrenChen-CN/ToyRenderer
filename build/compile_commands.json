@@ -16,6 +16,11 @@
 },
 {
   "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
+  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\imagetexture.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\imagetexture.cpp\"",
+  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/imagetexture.cpp"
+},
+{
+  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
   "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\light.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\light.cpp\"",
   "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/light.cpp"
 },
@@ -43,11 +48,6 @@
   "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
   "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\shadowmap.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\shadowmap.cpp\"",
   "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/shadowmap.cpp"
-},
-{
-  "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",
-  "command": "E:\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/Core.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Core.dir\\texture.cpp.obj -c \"E:\\code\\VSCode Projects\\C++\\ToyRenderer\\core\\texture.cpp\"",
-  "file": "E:/code/VSCode Projects/C++/ToyRenderer/core/texture.cpp"
 },
 {
   "directory": "E:/code/VSCode Projects/C++/ToyRenderer/build/core",

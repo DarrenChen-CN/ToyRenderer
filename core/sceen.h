@@ -3,15 +3,15 @@
 #include"model.h"
 #include"camera.h"
 #include"light.h"
+#include<memory>
 class Sceen{
 public:
-    std::vector<Model> modelList;
-    Camera camera;
-    Light* light;
+    std::shared_ptr<std::vector<Model>> modelList;
+    std::shared_ptr<Camera> camera;
+    std::shared_ptr<Light> light;
     void loadModel(const char* filename, const char* textureFilename = NULL);
-    void setLight(Light* light);
+    void setLight(std::shared_ptr<Light> light);
 
-    Sceen(Camera camera);
+    Sceen(std::shared_ptr<Camera> camera);
     Sceen();
-    Sceen(Sceen& otherSceen);
 };

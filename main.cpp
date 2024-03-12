@@ -33,29 +33,28 @@ int main(int argc, char* argv[]){
         return 2;
     }
 
-    Camera camera(CAMERA_POS, CENTER, UP, NEAR, FAR, ASPECT, FOVY);
-    Sceen sceen(camera);
+    std::shared_ptr<Camera> camera = std::make_shared<Camera>(CAMERA_POS, CENTER, UP, NEAR, FAR, ASPECT, FOVY);
+    std::shared_ptr<Sceen> sceen = std::make_shared<Sceen>(camera);
     // sceen.loadModel("../model/obj/diablo3_pose/diablo3_pose.obj", "../model/obj/diablo3_pose/diablo3_pose_diffuse.tga"); 
-    // sceen.loadModel("../model/obj/african_head/african_head.obj", "../model/obj/african_head/african_head_diffuse.tga"); 
-    sceen.loadModel("../model/Red/Red.obj", "../model/Red/Red.png"); 
+    // sceen -> loadModel("../model/obj/african_head/african_head.obj", "../model/obj/african_head/african_head_diffuse.tga"); 
+    sceen -> loadModel("../model/Red/Red.obj", "../model/Red/Red.png"); 
     // sceen.loadModel("../model/spot/spot_triangulated_good.obj", "../model/spot/spot_texture.png");
-    Eigen::Matrix4f model = sceen.modelList[0].modelMatrix;
-    Eigen::Matrix4f view = sceen.camera.viewMatrix;
-    Eigen::Matrix4f projection = sceen.camera.perspectiveMatrix;
-    Eigen::Matrix4f viewportMatrix = viewport(WINDOW_WIDTH, WINDOW_HEIGHT, sceen.camera.near, sceen.camera.far);
-    Light* light = new Light(lightPos, lightColor);
-    // std::cout << lightColor << std::endl;
-    sceen.setLight(light);
-    BlinnPhoneShader* shader = new BlinnPhoneShader();
+    Mat4 model = Mat4::Identity();
+    Mat4 view = sceen -> camera -> viewMatrix;
+    Mat4 projection = sceen -> camera -> perspectiveMatrix;
+    Mat4 viewportMatrix = viewport(WINDOW_WIDTH, WINDOW_HEIGHT, sceen -> camera -> near, sceen -> camera -> far);
+    std::shared_ptr<Light> light = std::make_shared<Light>(lightPos);
+    sceen -> setLight(light);
+    std::shared_ptr<Shader> shader = std::make_shared<BlinnPhoneShader>();
     shader->setModel(model);
     shader->setView(view);
     shader->setProjection(projection);
     shader->setViewport(viewportMatrix);
     shader->calMVP();
-    sceen.modelList[0].setShader(shader);
-    SDL_Surface* image = sceen.modelList[0].texture->texImage;
+    auto &modelList = *(sceen -> modelList);
+    modelList[0].setShader(shader);
     Rasterizer* rasterizer = new Rasterizer(WINDOW_WIDTH, WINDOW_HEIGHT, sceen);
-    // rasterizer->computeShadow();
+    
     rasterizer->draw();
 
     bool quit = false;
@@ -65,7 +64,6 @@ int main(int argc, char* argv[]){
             if(event.type == SDL_QUIT){
                 quit = true;
             }
-            // updateScreen(window, rasterizer->renderbuffer->getFrameBuffer());
             updateScreen(window, rasterizer-> renderbuffer->getFrameBuffer());
         }
     }

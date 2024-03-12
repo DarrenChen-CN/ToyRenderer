@@ -1,7 +1,9 @@
 #include"ui.h"
+#include"define.h"
+#include"mathutil.h"
 #include<SDL.h>
 
-void updateScreen(SDL_Window* window, unsigned char* frameBuffer){
+void updateScreen(SDL_Window* window, float* frameBuffer){
     int width, height;
     SDL_GetWindowSize(window, &width, &height);
     SDL_Surface* surface = SDL_GetWindowSurface(window);
@@ -11,10 +13,10 @@ void updateScreen(SDL_Window* window, unsigned char* frameBuffer){
     Uint32* pixels = (Uint32*)surface -> pixels;
     int cnt = width * height;
     for(int i = 0; i < cnt; i ++){
-        Uint8 r = (Uint8)frameBuffer[i * 4 + 0];
-        Uint8 g = (Uint8)frameBuffer[i * 4 + 1];
-        Uint8 b = (Uint8)frameBuffer[i * 4 + 2];
-        Uint32 color = SDL_MapRGB(surface -> format, r, g, b);
+        float r = frameBuffer[i * 4 + 0];
+        float g = frameBuffer[i * 4 + 1];
+        float b = frameBuffer[i * 4 + 2];
+        Uint32 color = SDL_MapRGB(surface -> format, (Uint8)r, (Uint8)g, (Uint8)b);
         pixels[i] = color;
     }
     // 解锁surface
